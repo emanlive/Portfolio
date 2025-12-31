@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="referrer" content="no-referrer">
+        <title>Emmanuel's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+            fucntion validateForm() {
+                const email = document.getElementbyId('email').value;
+                if(!email.includes('@')){
+                    alert('please enter a valid email.');
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am Learning IT and cybersecurity through hands-on projects.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Personal HTML/CSS Portfolio</li>
+                <li>Home Netwrok Security Setup</li>
+                <li>CTF Challenges (TryHackMe)</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: nwankwoeman@gmail.com</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Emmanuel Nwankwo</p>
+        </footer>
+    </body>
+</html>
